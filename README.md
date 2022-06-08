@@ -1,5 +1,5 @@
 # removebg
-<b><u>RemoveBG - Remove the background of images<u/></b>
+<b><u>RemoveBG - Remove the background of images</u></b>
 <br>
 <b>Description:</b><br>
 -RemoveBG is a program written in Python3 with a graphical interface.<br>

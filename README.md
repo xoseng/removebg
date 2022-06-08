@@ -1,6 +1,7 @@
 # removebg
 <b><u>RemoveBG - Remove the background of images</u></b>
 <br>
+
 <b>Description:</b><br>
 -RemoveBG is a program written in Python3 with a graphical interface.<br>
 -This software allows you to remove backgrounds from images.<br>

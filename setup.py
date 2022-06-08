@@ -5,7 +5,8 @@ from cx_Freeze import setup, Executable
 
 target = Executable(
     script="removebg.py",
-    base="logo.ico"
+    base="Win32GUI",
+    icon="logo.ico"
     )
 
 setup(

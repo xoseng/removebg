@@ -3,7 +3,7 @@
 <br><br>
 <b>Download portable version from Windows x64 bits:</b><br>
 https://e1.pcloud.link/publink/show?code=XZGbeRZH7QH2LB6jxb8jUpBbTeTr8lCaoiX
-<br><b>Description:</b><br>
+<br><br><b>Description:</b><br>
 -RemoveBG is a program written in Python3 with a graphical interface.<br>
 -This software allows you to remove backgrounds from images.<br>
 -It is possible process several images simultaneously.<br>
@@ -11,4 +11,4 @@ https://e1.pcloud.link/publink/show?code=XZGbeRZH7QH2LB6jxb8jUpBbTeTr8lCaoiX
 https://e1.pcloud.link/publink/show?code=XZrbeRZDVbehyCdk6pbXDOHbdI76SDRsqgX
 <br>The root folder of the working directory will be the following:
 
-<b>Example:</b>
+<br><br><b>Example:</b>

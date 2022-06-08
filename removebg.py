@@ -13,17 +13,17 @@ import tkinter_library_functions
 import img_library_functions
 
 #removebg neccesary imports
-import torch
-import torch.nn as nn
-import torch.optim as optim
-import numpy as np
-import cv2
-import uuid
-import os
-from model import U2NET
-from torch.autograd import Variable
-from skimage import io, transform
-from PIL import Image
+#import torch
+#import torch.nn as nn
+#import torch.optim as optim
+#import numpy as np
+#import cv2
+#import uuid
+#import os
+#from model import U2NET
+#from torch.autograd import Variable
+#from skimage import io, transform
+#from PIL import Image
 
 #tkinter neccesary imports
 from PIL import Image

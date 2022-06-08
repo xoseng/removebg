@@ -2,7 +2,7 @@
 <b><u>RemoveBG - Remove the background of images</u></b>
 <br>
 ![root_folder](https://github.com/xoseng/removebg/blob/main/img/cover.png?raw=true)
-<br>
+<br><br>
 <b>Download portable version from Windows x64 bits:</b><br>
 https://e1.pcloud.link/publink/show?code=XZGbeRZH7QH2LB6jxb8jUpBbTeTr8lCaoiX
 <br><br><b>Description:</b><br>

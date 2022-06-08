@@ -1,2 +1,3 @@
 # removebg
-Remove the background of images
+<b>RemoveBG - Remove the background of images</b>
+

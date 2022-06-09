@@ -1,5 +1,6 @@
-def removebg(img_path):
+def startremovebg(img_path):
 
+    # Imports
     import torch
     import torch.nn as nn
     import torch.optim as optim
@@ -8,13 +9,15 @@ def removebg(img_path):
     import uuid
     import os
 
-    from model import U2NET
+    #from model import U2NET
+    from model.u2net import U2NET
     from torch.autograd import Variable
     from skimage import io, transform
     from PIL import Image
 
     # Get The Current Directory
-    currentDir = os.path.dirname(__file__)
+    #currentDir = os.path.dirname(__file__)
+    currentDir = './'
 
     # Functions:
     # Save Results
@@ -52,14 +55,15 @@ def removebg(img_path):
         nparr = np.frombuffer(img, np.uint8)
 
         if len(nparr) == 0:
-            return '---Empty image---'
-
+            #return '---Empty image---'
+            pass
         # decode image
         try:
             img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
         except:
             # build a response dict to send back to client
-            return "---Empty image---"
+            #return "---Empty image---"
+            pass
 
         # save image to inputs
         unique_filename = str(uuid.uuid4())
@@ -92,11 +96,11 @@ def removebg(img_path):
                     '.png', pred, results_dir, 'image')
         save_output(inputs_dir+unique_filename+'.jpg', unique_filename +
                     '.png', pred, masks_dir, 'mask')
-        return "---Success---"
+        #return "---Success---"
 
 
     # ------- Load Trained Model --------
-    print("---Loading Model---")
+    #print("---Loading Model---")
     model_name = 'u2net'
     model_dir = os.path.join(currentDir, 'saved_models',
                              model_name, model_name + '.pth')
@@ -109,7 +113,8 @@ def removebg(img_path):
     # ------- Load Trained Model --------
 
 
-    print("---Removing Background...")
+    #print("---Removing Background...")
     # ------- Call The removeBg Function --------
     imgPath = img_path  # Change this to your image path
-    print(removeBg(imgPath))
+    #print(removeBg(imgPath))
+    removeBg(imgPath)

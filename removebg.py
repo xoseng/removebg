@@ -6,24 +6,19 @@
 #info about imports
 #pip install opencv-python
 #pip install scikit-image
+#pip install tensorflow matplotlib
+#pip install imageio
 
 #imports personal libraries
 import cmd_command
 import tkinter_library_functions
 import img_library_functions
+#import data_loader
 
-#removebg neccesary imports
-#import torch
-#import torch.nn as nn
-#import torch.optim as optim
-#import numpy as np
-#import cv2
-#import uuid
-#import os
-#from model import U2NET
-#from torch.autograd import Variable
-#from skimage import io, transform
-#from PIL import Image
+import os
+
+#removebg necesary imports
+#from torch import *
 
 #tkinter neccesary imports
 from PIL import Image
@@ -33,8 +28,6 @@ from PIL import ImageTk, Image
 import webbrowser
 import threading
 from tkinter import ttk
-#import pandas as pd
-
 
 def main_start():
 
@@ -120,7 +113,7 @@ def main_start():
                    file_path = file_path.replace("/", "\\")
                    file_path = file_path.strip()
                    # ELIMINAR FONDO
-                   img_library_functions.removebg(file_path)
+                   img_library_functions.startremovebg(file_path)
                    i = i + 1
 
                #MOVER AL PATH EL CONTENIDO DE RESULTS
@@ -131,7 +124,10 @@ def main_start():
                #LIMPIAR TEMPORALES
                clear_vals()
                #ABRIR CARPETA
-               cmd_command.wincmd('explorer "' + filepath + '"')
+               try:
+                cmd_command.wincmd('explorer "' + filepath + '"')
+               except:
+                   pass
 
     # MAIN SCREEN
     version_software = 'RemoveBG v0.1'
@@ -159,7 +155,7 @@ def main_start():
     # GLOBAL TK VARS DECLARATION
     val_workfile = StringVar()
     val_filelist = StringVar()
-    val_numfile=IntVar()
+    val_numfile = IntVar()
     val_filepath = StringVar()
 
     # BUTTONS LABEL FORM
